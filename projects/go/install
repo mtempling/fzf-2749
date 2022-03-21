@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -e
+
+mkdir -p "${OVE_STAGE_DIR:?}${OVE_PREFIX:?}"
+
+# unpack and install
+# shellcheck disable=SC2154
+if ! tar -C "${OVE_STAGE_DIR}${OVE_PREFIX}" -xf "go${go_version}.linux-amd64.tar.gz" --strip-components 1; then
+	echo "error: failed to unpack go"
+	exit 1
+fi

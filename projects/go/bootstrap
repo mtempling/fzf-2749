@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -e
+
+# get go
+if ! [ -e "go${go_version:?}.linux-amd64.tar.gz" ]; then
+	if ! wget "https://go.dev/dl/go${go_version}.linux-amd64.tar.gz"; then
+		echo "error: failed to wget go $go_version"
+		exit 1
+	fi
+fi

@@ -1,0 +1,15 @@
+---
+go:
+  path:
+    $OVE_GLOBAL_STATE_DIR
+  version:
+    1.17.7
+
+fzf:
+  deps:
+    go
+  needs:
+    make
+    wget
+  path:
+    fzf

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+
+ove echo yellow "mark multiple entries with TAB, jump between selections with ctrl-j"
+echo "$ seq 1 10 | fzf --multi --bind=ctrl-j:next-selected"
+sleep 2
+seq 1 10 | fzf --multi --bind=ctrl-j:next-selected || true

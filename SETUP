@@ -1,0 +1,1 @@
+curl -sSL https://raw.githubusercontent.com/Ericsson/ove/master/setup | bash -s fzf https://github.com/mtempling/fzf-2749 main

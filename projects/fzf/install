@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -e
+
+if ! make install; then
+	echo "error: make install failed"
+	exit 1
+fi
+
+if ! install -Dm0755 bin/fzf "${OVE_STAGE_DIR:?}${OVE_PREFIX:?}/bin/fzf"; then
+	echo "error: failed to install fzf"
+	exit 1
+fi

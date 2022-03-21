@@ -1,0 +1,2 @@
+GOROOT           $OVE_STAGE_DIR/usr
+OVE_DEMO_DIVISOR 1
