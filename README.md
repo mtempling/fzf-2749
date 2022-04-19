@@ -18,19 +18,19 @@
     $ tree -h
     .
     ├── [4.0K]  demo
-    │   ├── [ 36K]  next-selection.log
-    │   └── [ 783]  next-selection.timing
+    │   ├── [150K]  next-selection.log
+    │   └── [2.5K]  next-selection.timing
     ├── [1.0K]  LICENSE
     ├── [4.0K]  projects
     │   ├── [4.0K]  fzf
     │   │   ├── [  34]  build
     │   │   ├── [  40]  clean
     │   │   ├── [ 227]  install
-    │   │   └── [ 242]  test
+    │   │   └── [ 299]  test
     │   └── [4.0K]  go
     │       ├── [ 229]  bootstrap
     │       └── [ 282]  install
     ├── [ 128]  projs
-    ├── [ 832]  README.md
-    ├── [ 178]  revtab
+    ├── [ 982]  README.md
+    ├── [ 185]  revtab
     └── [ 127]  SETUP
